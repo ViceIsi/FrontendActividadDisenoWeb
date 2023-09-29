@@ -1,0 +1,9 @@
+<div class="CreateTask">
+    <p>Create Task</p>
+</div>
+<div class="SeeTasks" *ngFor="let Task of Tasks">
+    <p>Tasks: </p>
+    <div class="Task" *ngFor="let task of Tasks">
+        <app-single-task *ngIf="interest" [task]="task"></app-single-task>
+    </div>
+</div>
